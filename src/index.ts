@@ -16,14 +16,7 @@ import { z } from 'zod'
 import { logging } from './middleware.js'
 
 // Optional: Define configuration schema to require configuration at connection time
-// export const configSchema = z.object({
-//   serverToken: z.string().optional().describe('Server access token'),
-//   caseSensitive: z
-//     .boolean()
-//     .optional()
-//     .default(false)
-//     .describe('Whether character matching should be case sensitive'),
-// })
+export const configSchema = z.object({})
 
 const app = express()
 const PORT = process.env.PORT || 8080
